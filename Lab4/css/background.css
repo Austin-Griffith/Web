@@ -1,0 +1,70 @@
+
+.school-out {
+  background: url("../images/schools-out.png") ; /* places image in the center of the page, fixes position, and disables tiling */
+  background-size: cover;
+}
+
+.travel {
+  background: url("../images/travel.jpg") ; /* places image in the center of the page, fixes position, and disables tiling */
+  background-size: cover;
+}
+
+.bullet-train {
+  background: url("../images/bullet-train.jpg") ; /* places image in the center of the page, fixes position, and disables tiling */
+  background-size: cover;
+}
+
+.europe {
+  background: url("../images/europe.jpg") ;
+  background-size: cover;
+}
+
+.france {
+  background: url("../images/france.jpg") ;
+  background-size: cover;
+}
+
+.prague {
+  background: url("../images/prague.jpg") ;
+  background-size: cover;
+}
+
+.spain {
+  background: url("../images/spain.jpg") ;
+  background-size: cover;
+}
+
+.overseas {
+  background: url("../images/overseas.jpeg") ;
+  background-size: cover;
+}
+
+body {
+  color: white;
+  font-family: Iconsolata, monospace, Arial, Helvectica, san-serif;
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 3.5em ;
+  color: white;
+  font-family: Helvectica,monospace,sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em ;
+  color: white;
+  font-family: Helvectica,monospace,sans-serif;
+  text-align: left;
+}
+
+body em {
+  size: 3em;
+}
+
+.container  {
+  width: 1000px;
+  margin: 0 auto;
+}

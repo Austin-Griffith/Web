@@ -1,0 +1,19 @@
+body {
+  color: white;
+  font-family: Iconsolata, monospace, Arial, Helvectica, san-serif;
+  padding-top: 10px;
+  line-height: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+body em {
+  size: 1.2em;
+}
+
+.container  {
+  width: 960px;
+  margin: 0 auto;
+}

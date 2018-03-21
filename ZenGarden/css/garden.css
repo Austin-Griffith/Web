@@ -1,0 +1,348 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@font-face {
+  font-family: Great Day;
+
+}
+
+/* body border */
+html:before, html:after, body:before, body:after {
+  background: #fff;
+  content: "";
+  display: block;
+  position: fixed;
+	z-index: 999;
+}
+html:before {
+  height: 5px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+html:after {
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 5px;
+}
+body:before {
+  bottom: 0;
+  height: 5px;
+  left: 0;
+  right: 0;
+}
+body:after {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 5px;
+}
+
+body {
+  background-color: lightblue;
+	/* background-image: url("zenground.jpg"); */
+  /* opacity: 0.33; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Roboto Condensed','Arial', 'Helvetica', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height: 2em;
+  overflow-x: hidden;
+  text-align: justify;
+  width: auto;
+}
+
+/*
+body img {
+  background-image: url("zenground.jpg");
+  opacity: 0.5;
+} */
+
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover { color: white ; }
+a:visited { color: white ;}
+
+h2 {
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  text-align: left;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  text-align: left;
+  text-transform: uppercase;
+}
+body#css-zen-garden { }
+.page-wrapper { }
+
+/* intro section */
+#zen-intro {
+  height: auto;
+  position: relative;
+  width: 50%;
+}
+#zen-intro h1 {
+  font-family: 'Great Day', 'Roboto Condensed',
+  	'Helvetica', 'Arial', monospace;
+  font-size: 3em;
+  margin-top: 33%;
+  position: relative;
+  text-align: center;
+	transition: ease 0.5s;
+  width: 95vw;
+}
+#zen-intro h1:hover {
+	color: red;
+	transition: ease 0.7s;
+}
+#zen-intro h2 {
+  font-size: 17px;
+	display:grid;
+	height: 125px;
+  margin-left: -40vw;
+  position: fixed;
+  text-align: center;
+  top: 20%;
+  transform: rotate(-40deg);
+  width: 95vw;
+}
+#zen-intro p { }
+header[role="banner"] { }
+.summary, #zen-summary {
+	left: 95%;
+  position: relative;
+	text-align: center;
+  transform: translate(-50%, 0);
+	width: 100%;
+}
+
+/* preamble section  */
+
+.preamble, #zen-preamble {
+	background-color: rgba(113,125,103,.75);
+	display: block;
+  margin-left: 12%;
+  margin-top: 10vh;
+	padding: 2%;
+	padding-top: 1%;
+	width: 100%;
+	z-index: 0;
+}
+.preamble h3, #zen-preamble h3 {
+	font-size: 2em;
+	letter-spacing: .8em;
+	line-height: 2em;
+	text-align: left;
+  text-decoration: overline;
+}
+.preamble h3:hover, #zen-preamble h3:hover {
+	text-decoration: line-over;
+}
+
+/* zen supporting section */
+ #css-zen-garden {
+  background-image: url("space.jpg");
+
+}
+#zen-supporting {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: auto;
+}
+#zen-supporting h3 {
+	font-size: 2em;
+	letter-spacing: .8em;
+}
+#zen-supporting h3:hover {
+	text-decoration:overline;
+}
+.explanation, #zen-explanation {
+	background-color: rgba(141,172,131,0.75);
+	display: block;
+	left: 50%;
+	margin-top: 5%;
+	padding: 2%;
+	padding-top: 1%;
+  position: relative;
+	width: 35%;
+}
+
+/* participation and benefits and requirements ection */
+
+.participation, #zen-participation {
+	background-color: rgba(133,116,107,0.75);
+	display: block;
+	left: 7%;
+	margin-top: -35%;
+	padding: 2%;
+	padding-top: 1%;
+  position: relative;
+	width: 30%;
+  /* text-decoration: overline; */
+}
+.benefits, #zen-benefits {
+  background-color: rgba(86,75,104,0.75);
+	display: block;
+	left: 43%;
+	margin-top: -10%;
+	padding: 2%;
+	padding-top: 1%;
+  position: relative;
+	width: 45%;
+}
+.requirements, #zen-requirements {
+  background-color: rgba(143,149,129,0.75);
+	display: block;
+	left: 20%;
+	margin-top: 3%;
+	padding: 2%;
+	padding-top: 1%;
+  position: relative;
+	width: 50%;
+}
+
+/* header styles */
+header { }
+
+/* sidebar styles */
+.sidebar {
+	background-color: lightgrey ;
+  border-left: 4px solid white;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 75px;
+}
+.wrapper { }
+
+/* sidebar sections */
+.design-selection, #design-selection { position: relative; }
+.design-selection h3, #design-selection h3 {
+  font-size: 11px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  margin: 2vw;
+  max-width: 40px;
+}
+.design-archives, #design-archives { position: relative; }
+.design-archives h3, #design-archives h3 {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* universal navigation */
+nav { font-size: 10px; height: auto; width: auto; }
+nav ul { list-style-type: none; }
+nav li {
+	display: flex;
+	line-height: 1em;
+  max-height: 10px;
+  margin: 5px 0 5px -41px;
+  padding: 10px 0 10px 37px;
+  visibility: hidden;
+  width: 100%;
+}
+nav li:hover:after {
+  content:'';
+  position: absolute;
+	bottom: -10px;
+	left:-10px;
+	right:-10px;
+  top:-10px;
+}
+nav li:hover {
+	background-color: white;
+  border-right: 4px solid rgba(0,0,0,0.5);
+	display: flex;
+	max-height: auto;
+	line-height: 1em;
+	margin-left: -203px;
+  padding-right: 22px;
+	padding-bottom: 10px;
+	visibility: visible;
+	width: 100px;
+}
+.design-name {
+  border-style: none;
+  display: inline-block;
+	height: auto;
+  overflow: hidden;
+}
+.design-name:first-letter {
+  color: blue;
+  visibility: visible;
+}
+.zen-resources, #zen-resources {
+	list-style-type: none;
+	margin-left: -80vw;
+	margin-top: -65vh;
+	text-transform: uppercase;
+	width: 95vw;
+}
+.zen-resources h3, #zen-resources h3 {
+	font-size: 11px;
+	display: inline;
+}
+li.view-css {
+	display: inline-block;
+	list-style-type: none;
+	margin-top: -3.5vh;
+	margin-left: 25px;
+	padding-right: 5%;
+}
+li.css-resources {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 7.5%;
+}
+li.zen-faq {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 7.5%;
+}
+li.zen-submit {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 7.5%;
+}
+li.zen-translations {
+	display: inline-block;
+	list-style-type: none;
+}
+
+/* footer */
+footer {
+	bottom: 10px;
+	height: 35px;
+	margin-left: -0.5%;
+	margin-top: 7.5%;
+	position: relative;
+	text-align: center;
+  width: 94.5vw;
+	z-index: 0;
+}
+footer a {
+	color: red;
+	display: inline;
+	top: 20%;
+	padding-right: 5%;
+	position: relative;
+	width: 95%;
+}
+footer a:last-child { padding-right: none; }
