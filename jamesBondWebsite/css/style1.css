@@ -8,20 +8,20 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
-h1 {
+/* h1 {
   font-size: 3em;
   font-family: 'Helvetica', sans-serif;
   font-weight: 400;
   color: blue;
-  
-}
 
-h2 {
-  font-size: 2em;
+} */
+
+#titles h1,h2 {
+  font-size: 3em;
   font-family: 'Helvetica', sans-serif;
   text-align: center;
   margin-bottom: 10px;
-  color: purple;
+  color: blue;
   padding-bottom: .3em;
   font-weight: 600;
 }
@@ -35,6 +35,14 @@ p {
   text-align: center;
   color: red;
 }
+
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover { color: blue ; }
+a:visited { color: red ;}
+
 
 nav {
   display: block-grid;

@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: white;
   margin: 75;
   font-family: 'Helvetica', sans-serif;
 }
@@ -46,12 +46,18 @@ h2 {
 }
 
 h3 {
-  padding-top: .4em;
+  color: var(--blue);
+  font-size: 1em;
+  /* padding-top: .4em; */
 }
 
 p {
   font-size: 1.5em;
   color: yellow;
+}
+
+a{
+  text-decoration: none;
 }
 
 
@@ -86,6 +92,7 @@ nav {
   display: flex ;
   background-color: var(--orange);
   list-style: none ;
+  padding: 0.25em;
   min-height: 60px;
   &::after {
     content: "nav";
@@ -99,6 +106,7 @@ div {
 ul li {
   list-style: block-grid;
   list-style: none ;
+  margin-right: 0.5em;
 }
 
 li {
@@ -153,7 +161,7 @@ footer {
 .row {
   padding: 1em 1em;
   margin-bottom: .5em;
-	margin-right: -1em;
+	margin-right: -.25em;
 }
 
 section {
@@ -175,57 +183,31 @@ main {
   justify-content: space-around;
 
 }
+
 @keyframes fadeBlue {
   0% {
-    color: black;
+    color: blue;
   }
   100% {
-    color: blue;
+    color: var(--orange);
   }
 }
 
 .color-change {
-  animation: 10.0s ease-in 1s 1 fadeBlue;
+  animation: 5.0s ease-in 1s 1 fadeBlue;
   color: blue;
 }
 
 #home {
-  background-color: grey;
-}
-/* #home {
-  grid-template-columns: 1fr 1fr 15%;
-  grid-template-rows: 60px 1fr auto auto 100px;
-
-
-  grid-template-areas:
-    'top top top'
-    '. . .'
-
-    'labs . projects'
-    'labs . projects'
-    'bottom bottom bottom';
-}
-nav {
-  grid-area: top;
+  background-color: black;
 }
 
-body {
-  grid-area: intro;
-  display: grid;
-}
-main {
-  grid-area: main;
-  display: grid;
-}
+@media screen and (max-width:760px){
+  main {
+    flex-direction: column;
+  }
 
-#labs {
-  grid-area: labs ;
+  section{
+    width: 90% ;
+  }
 }
-
-#projects {
-  grid-area: projects ;
-}
-
-footer {
-  grid-area: bottom;
-} */

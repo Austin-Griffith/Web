@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NRA Gun Survey</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+    <body>
+      <div id="main">
+      <img src="img/NRA.jpg" alt="NRA Gun Survey">
+      </div>
+    <form>
+        <!-- checkbox section -->
+      <p>What kind of guns are you interested in?</p>
+
+      <div class="form_element">
+        <div>
+          <input type = "checkbox" id = "rifles" value = "Rifles">
+          <label for="rifles">Rifles</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "handguns" value = "Handguns">
+          <label for="handguns">Handguns</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "shotguns" value = "Shotguns">
+          <label for="shotguns">Shotguns</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "assult" value = "Assult">
+          <label for="assult">Assult Rifles</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "pistol" value = "Revolver">
+          <label for="pistol">Revolver</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "sniper" value = "Sniper">
+          <label for="sniper">Sniper Rifle</label>
+        </div>
+
+      </div>
+
+
+      <!-- yes/no radio button section -->
+      <p>Do you currently own any firearms?</p>
+      <div class="form_element">
+        <div>
+          <input  type="radio" name="guns" id="gunsYes" value="yes">
+          <label for="gunsYes">Yes</label>
+        </div>
+        <div>
+          <input  type="radio" name="guns" id="gunsNo" value="no">
+          <label for="gunsNo">No</label>
+        </div>
+      </div>
+
+        <!-- dropdown selection list section   -->
+      <p>If you could purchase a firearm today what would you choose?</p>
+      <div class="form_element">
+        <select id="gun_choice">
+          <option value="none">None</option>
+          <option value="A rifle">A rifle</option>
+          <option value="A shotgun">A shotgun</option>
+          <option value="An assult rifle">An assult rifle</option>
+          <option value="A pistol">A pistol</option>
+        </select>
+      </div>
+      <p>
+      <button type="button" id="enter">Submit Survey</button>
+      </p>
+  </form>
+      
+      <div id="output"></div>
+
+
+      <script src="js/lab8.js"></script>
+    </body>
+</html>

@@ -147,7 +147,7 @@ header[role="banner"] { }
   text-decoration: overline;
 }
 .preamble h3:hover, #zen-preamble h3:hover {
-	text-decoration: line-over;
+	text-decoration: overline;
 }
 
 /* zen supporting section */
@@ -270,7 +270,7 @@ nav li:hover {
 	background-color: white;
   border-right: 4px solid rgba(0,0,0,0.5);
 	display: flex;
-	max-height: auto;
+	max-height: inherit;
 	line-height: 1em;
 	margin-left: -203px;
   padding-right: 22px;
@@ -345,4 +345,17 @@ footer a {
 	position: relative;
 	width: 95%;
 }
-footer a:last-child { padding-right: none; }
+
+footer a:last-child {
+  padding-right: 1%;
+}
+
+@media screen and (max-width:760px){
+  main {
+    flex-direction: column;
+  }
+
+  section{
+    width: 90% ;
+  }
+}
