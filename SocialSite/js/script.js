@@ -1,7 +1,6 @@
-// console.log('yo');
 
 $(document).ready(function(){
-  // initiate fullpage.js
+  // call to fullpage.js
   $('#fullpage').fullpage({
     navigation: 'true',
     navigationPosition: 'right',

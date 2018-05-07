@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>General Car Survey</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+    <body>
+      <div id="main">
+      <img src="img/carQuestions.jpg" alt="General Car Survey">
+      </div>
+    <form>
+        <!-- checkbox section -->
+      <p>What kind of cars are you interested in?</p>
+
+      <div class="form_element">
+        <div>
+          <input type = "checkbox" id = "trucks" value = "Trucks">
+          <label for="trucks">Trucks</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "suv's" value = "SUV">
+          <label for="suv's">SUV</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "compacts" value = "Compact">
+          <label for="compacts">Compact Car</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "sedans" value = "Sedan">
+          <label for="sedans">Sedans</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "coupes" value = "Coupe">
+          <label for="coupes">Coupes</label>
+        </div>
+
+        <div>
+          <input type = "checkbox" id = "hybrids" value = "Hybrid">
+          <label for="hybrids">Hybrids</label>
+        </div>
+
+      </div>
+
+
+      <!-- yes/no radio button section -->
+      <p>Do you currently own any vehicles?</p>
+      <div class="form_element">
+        <div>
+          <input  type="radio" name="cars" id="carsYes" value="yes">
+          <label for="carsYes">Yes</label>
+        </div>
+        <div>
+          <input  type="radio" name="cars" id="carsNo" value="no">
+          <label for="carsNo">No</label>
+        </div>
+      </div>
+
+      <p>Do you currently own any electric vehicles?</p>
+      <div class="form_element">
+        <div>
+          <input  type="radio" name="cars1" id="electricYes" value="yes">
+          <label for="electricYes">Yes</label>
+        </div>
+        <div>
+          <input  type="radio" name="cars1" id="electricNo" value="no">
+          <label for="electricNo">No</label>
+        </div>
+      </div>
+
+        <!-- dropdown selection list section   -->
+      <p>If you could purchase a vehicle today what brand would you choose?</p>
+      <div class="form_element">
+        <select id="car_choice">
+          <option value="none">None</option>
+          <option value="Chevy">Chevy</option>
+          <option value="Ford">Ford</option>
+          <option value="BMW">BMW</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Kia">Kia</option>
+          <option value="Nissan">Audi</option>
+          <option value="Audi">Audi</option>
+        </select>
+      </div>
+
+      <br>
+      <label for="favorite">What's your favorite vehicle sold on the market today?</label>
+      <br>
+      <div class="form_element">
+      <input type="text" id="favorite">
+      </div>
+
+
+      <p>
+      <button type="button" id="enter">Submit Survey</button>
+      </p>
+
+
+  </form>
+
+      <div id="output"></div>
+
+
+      <script src="js/lab9.js"></script>
+    </body>
+</html>
