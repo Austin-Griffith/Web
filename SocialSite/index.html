@@ -10,16 +10,18 @@
     <script src='js/jquery.fullPage.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js'></script>
     <script src='js/script.js'></script>
+    <script>
+      document.addEventListener('onload',load_page_details());
+    </script>
     <title>Electric Car Takeover</title>
   </head>
-
 
   <body>
     <div id='fullpage'>
       <div id='section1' class='section'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-6 text-center'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-6 text-center'>
               <h1>The Electric Car Takeover</h1>
               <p>A website dedicated to showcasing the fundamental benefits of electric vechiles</p>
             </div>
@@ -30,12 +32,11 @@
 
           <!-- Start of first page Overview page of benefits, costs, fuel vs electric etc -->
           <div id='section11' class='section modelX'>
-            <div class='grid-container'>
-              <div class='row'>
-                <div class='col-3'></div>
-                <div class='col-3 tback'>
+            <div class='grid-style'>
+              <div class='format'>
+                <div class='colum-3'></div>
+                <div class='colum-3 formside'>
                   <div class='content'>
-
                     <h2>The Era of Electric Cars Is Here</h2>
                     <ul>
                       <li>
@@ -89,13 +90,12 @@
         <!-- Model S section  -->
 
       <div id='section2' class='section modelS'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3 formside'>
               <div class='content'>
                 <h2>Tesla Model S</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -119,9 +119,9 @@
                   </li>
                 </ul>
                 <br>
-                <h3 class='active-title'>Details</h3>
+                <h3 class='showing-head'>Details</h3>
                 <h3>Benefits</h3>
-                <div id='modelS-details' class=''>
+                <div id='modelS-details'>
                   <br>
                   <p>
                     Model S is designed from the ground up to be the safest, most exhilarating sedan on the road.
@@ -148,15 +148,13 @@
 
       <!-- Model x section  -->
       <div id='section3' class='section modelX'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3'></div>
+            <div class='colum-3 formside'>
               <div class='content'>
-
                 <h2>Tesla Model X</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -182,7 +180,7 @@
                 <br>
                 <h3>Details</h3>
                 <h3>Benefits</h3>
-                <div id='modelX-details' class=''>
+                <div id='modelX-details'>
                   <br>
                   <p>
                     Model X is the safest, quickest, and most capable sport utility vehicle in history.
@@ -212,13 +210,12 @@
 
         <!-- Model 3 section  -->
       <div id='section4' class='section model3'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3 formside'>
               <div class='content'>
                 <h2>Tesla Model 3</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -244,7 +241,7 @@
                 <br>
                 <h3>Details</h3>
                 <h3>Benefits</h3>
-                <div id='model3-details' class=''>
+                <div id='model3-details'>
                   <br>
                   <p>
                     The Model 3 is a smaller, simpler, more affordable electric car.
@@ -276,15 +273,13 @@
       <!-- Tesla Roadster Section -->
 
       <div id='section5' class='section roadster'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3'></div>
+            <div class='colum-3 formside'>
               <div class='content'>
-
                 <h2>Tesla Roadster</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -342,13 +337,12 @@
 
       <!-- Last Section on overall theme and idea of class -->
       <div id='section6' class='section leaf'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3 formside'>
               <div class='content'>
                 <h2>Nissan LEAF</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -412,15 +406,13 @@
       <!-- end of Nissan Leaf Section -->
 
       <div id='section7' class='section I3'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3'></div>
+            <div class='colum-3 formside'>
               <div class='content'>
-
                 <h2>BMW I3</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -478,13 +470,12 @@
       <!-- end of BMW I3 Section  -->
 
       <div id='section8' class='section spark'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3 formside'>
               <div class='content'>
                 <h2>Chevy Spark</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -545,15 +536,13 @@
       <!-- end of Chevy Spark section -->
 
       <div id='section9' class='section zoe'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-3 tback'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3'></div>
+            <div class='colum-3 formside'>
               <div class='content'>
-
                 <h2>Renault Zoe</h2>
-
-                <!-- <p>DETAILS</p> -->
+                <br>
                 <ul>
                   <li>
                       <h4>Brand</h4>
@@ -613,25 +602,12 @@
         </div>
       </div>
       <!-- end of Renault section  -->
-<!--
-      <div id='section10' class='section'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-6 text-center'>
-              <h1>The ending information </h1>
-              <p>A website dedicated to showcasing the fundamental benefits of electric vechiles</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- end of last section going over the electric cars -->
-
 
       <div id='section10' class='section close'>
-        <div class='grid-container'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-3 tback' id='closing'>
+        <div class='grid-style'>
+          <div class='format'>
+            <div class='colum-3'></div>
+            <div class='colum-3 formside' id='closing'>
               <div class='content'>
                 <h2>Electric Vehicle Benefits</h2>
                 <ul>
@@ -678,7 +654,7 @@
                 </ul>
                 </div>
               </div>
-              <div class='col-3 tback' id='spacing'>
+              <div class='colum-3 formside' id='spacing'>
                 <div class='content'>
                   <h2>The Numbers Breakdown</h2>
                   <br>
@@ -699,7 +675,8 @@ https://alvarotrigo.com/fullPage/#
 https://github.com/alvarotrigo/fullpage.js
 http://www.thedrive.com/new-cars/18962/2018-nissan-leaf-review-an-otherwise-exemplary-electric-car-falls-short-in-driving-range
 https://www.coxchevy.com/benefits-of-owning-chevy-spark/
-https://evobsession.com/drives-electric-cars-electric-cars-growing-rapidly-infographic/
+https://evobsession.com/drives-electric-cars-electric-cars-gformating-rapidly-infographic/
 https://www.marketplace.org/2017/08/03/sustainability/whether-electric-vehicles-really-reduce-total-emissions
-
+http://creative.colorado.edu/~lume2651/fwd/projects/project-1/
+https://www.binpress.com/tutorial/creating-a-full-page-scrolling-website-with-fullpagejs/136
 https://evobsession.com/10-best-electric-cars/ -->

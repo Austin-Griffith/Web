@@ -6,57 +6,39 @@ html {
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
+  margin: 0%;
+  padding: 0%;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: white;
-}
-
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: Helvetica, sans-serif;
-  font-style: oblique;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 4em;
+  font-weight: 600;
+  font-size: 400% ;
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 150% ;
 }
 
 h3 {
   display: inline;
-  border-bottom: 0.05em solid transparent;
-  transition: all 0.2s linear;
-  /* color: rgba(255,255,255,0.7); */
+  font-weight: 600;
   color: lightgrey ;
 }
 
 h3:hover {
-  color: rgba(255,255,255,1);
-  border-bottom: 0.05em solid rgba(255,255,255,0.5);
+  color: lightgrey ;
+
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 100%;
   color: lightgrey ;
 }
 
@@ -66,18 +48,42 @@ ul {
 
 ul p {
   font-weight: 500;
-  /* font-size: 0.75em; */
-  font-size: 0.9em ;
+  font-size: 90% ;
+}
+
+p {
+  font-weight: 600 ;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.text-center {
+  padding-top: 30% ;
+  text-align: center;
+  color: black ;
+}
+
+/* hides text so you have to click for benefits of car per each section */
+.hidden {
+  display: none;
+}
+
+.showing-head {
+  color: white;
+  border-bottom: 50% solid white;
 }
 
 #graphic {
   width: 100% ;
-  /* height: 90% ; */
 }
 
 #fp-nav ul li a span {
   background-color:white;
-
 }
 
 #spacing {
@@ -91,7 +97,7 @@ ul p {
   height: 600px ;
 }
 
-/*Setting the background images by sections tag*/
+/*Setting the background images by sections id tag*/
 #section1 {
   background-image: url('../img/greenEnergy.jpg');
 }
@@ -103,7 +109,6 @@ ul p {
 #section10 {
   /* background-color: grey ; */
   /* background-image: url('../img/EVinfo.jpg') */
-
 }
 
 /* setting background images by class tag */
@@ -156,97 +161,64 @@ ul p {
   background-repeat: no-repeat;
 }
 
-
 .close {
   background-color: grey ;
 }
 
-
-
-.grid-container {
+.grid-style {
   width: 100%;
   max-width: inherit;
 }
 
-/*colums for text sections ---> layout*/
-.outline, .outline * {
-  outline: 1px solid #fff;
-}
-/* creates the border space around text in text sections */
-[class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: calc((100% - 12px * 2) / 6);
-  /*width: 16.66%;*/
-  padding: 12px;
-}
-
-.col-6 {
+/* creates the space for text in sections */
+.colum-6 {
   width: 100%;
 }
 
-.col-3 {
-  /*width: calc(((100% - 12px * 2) / 6) * 3);*/
+.colum-3 {
   width: 40%;
-  /*padding-right: 3em;*/
+
 }
-.col-3:nth-child(2n) {
-  /*width: calc(((100% - 12px * 2) / 6) * 3);*/
+.colum-3:nth-child(2n) {
   width: 40%;
-  /* padding-right: 3em; */
   float: right ;
 
 }
 
 /* elements of text boxes for styling and sets opacity to 70% */
-.tback {
+.formside {
   background-color: rgba(0,0,0,.7);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-right: 3em ;
   margin-left: 2em ;
-  /* padding-right: 5em;  */
 }
 
-/* alternatates between sides of page in effect with .tback */
-.tback:nth-child(2n){
+/* alternatates between sides of page in effect with .formside */
+.formside:nth-child(2n){
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 3em;
+  margin-left: 1em ;
 }
 
+/* needs margins all around text for better readability */
 .content {
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-right: 1em;
+  margin-left: 1em ;
   height: 520px;
 }
 
-
-/* .content img {
-  height: 100%;
-  max-width: 100% ;
-} */
-
-
+/* setting size for min content format  */
 .modelX .content,
 .model3 .content {
-  min-height: 540px;
-}
-
-
-.text-center {
-  padding-top: 30% ;
-  text-align: center;
-  color: black ;
-}
-
-/* hides text so you have to click for benefits of car per each section */
-.hidden {
-  /*visibility: hidden;*/
-  display: none;
-}
-
-.active-title {
-  color: white;
-  border-bottom: .05em solid #fff;
+min-height: 520px;
 }
 
 /* media queries to change website to be responsive for different
@@ -263,14 +235,14 @@ sceeen sizes and devices */
 
 /* makes text more readable on smaller screen sizes */
 @media screen and (max-width:950px) {
-  .col-3:nth-child(2n){
+  .colum-3:nth-child(2n){
     width: 100% ;
     padding-right: .1em ;
   }
-  .col-3{
+  .colum-3{
     width: 100% ;
   }
-  .tback{
+  .formside{
     margin-right: 0em ;
     margin-left: 0em;
   }
